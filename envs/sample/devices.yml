@@ -1,0 +1,6 @@
+device-a:
+  ip: 10
+device-b:
+  ip: 11
+device-c:
+  ip: 12

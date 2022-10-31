@@ -1,0 +1,7 @@
+zone: example.com
+host:
+  ip:
+    external: 127.0.0.1
+    internal: 127.0.0.1
+storage:
+  media: /var/lib/media-storage

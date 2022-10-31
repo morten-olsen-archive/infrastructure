@@ -1,0 +1,4 @@
+/output/
+/terraform/.terraform
+/terraform/terraform.tfstate*
+/envs/
