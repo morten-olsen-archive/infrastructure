@@ -13,13 +13,16 @@ locals {
   external_subdomain = try(local.configs.general.subdomain.external, local.namespace)
   internal_subdomain = try(local.configs.general.subdomain.internal, "i.${local.external_subdomain}")
   namespace          = local.environment
+  smtp               = try(local.configs.secrets.smtp, null)
   host = {
     ip = {
       external = local.configs.general.host.ip.external
       internal = local.configs.general.host.ip.internal
     }
   }
-  docker = try(local.configs.general.docker, "unix:///var/run/docker.sock")
+  docker = {
+    host = try(local.configs.general.docker.host, "unix:///var/run/docker.sock")
+  }
   cloudflare = {
     api_token = local.configs.secrets.cloudflare.api-token
   }

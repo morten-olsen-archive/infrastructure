@@ -2,6 +2,8 @@ variable "core" {
 
 }
 
+variable "smtp" {}
+
 variable "external" {
   default = false
 }

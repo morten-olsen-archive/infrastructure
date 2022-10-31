@@ -27,7 +27,7 @@ After you will have a folder called `output/{your-env-name}` which contains clie
   - [x] Basic storage setup
   - [ ] Additional DNS records
   - [ ] Additional proxy targets
-  - [ ] Mount NAS (GlusterFS)
+  - [x] Mount NAS (GlusterFS)
   - [ ] Uptime monitor/alerts
   - [ ] Logging (?)
 - [ ] Network (Unifi)
@@ -50,13 +50,17 @@ After you will have a folder called `output/{your-env-name}` which contains clie
   - [x] vaultwarden
   - [ ] syncthing
   - [ ] keycloak
-  - [ ] radicale
-  - [ ] freshrss
+  - [x] radicale
+  - [x] freshrss
   - [ ] gitea
     - [ ] drone-ci
-  - [ ] nextcloud
-  - [ ] wallabag
+  - [x] wallabag
   - [ ] code playground
+  - [x] gotify
+  - [ ] music
+    - [x] subsonic compatible server
+    - [ ] mpd
+    - [ ] snapcast
   - [ ] service dashboard
     - [ ] internal
     - [ ] external

@@ -23,7 +23,7 @@ terraform {
 }
 
 provider "docker" {
-  host = local.docker
+  host = local.docker.host
 }
 
 provider "wireguard" {

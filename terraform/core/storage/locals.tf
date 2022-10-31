@@ -1,6 +1,10 @@
 locals {
+  server = {
+    share = try(var.storage.server.share, null)
+  }
   namespace = var.namespace
-  slow      = var.storage.media
+  target    = var.storage.media
+  slow      = "${local.target}/mount"
   movies    = "${local.slow}/movies"
   tvshows   = "${local.slow}/tv-shows"
   music     = "${local.slow}/music"

@@ -1,0 +1,11 @@
+{
+  "paths": {
+    "": {
+      "scaffolds": {
+        "gitignore": {},
+        "typescript": {},
+        "eslint": {}
+      }
+    }
+  }
+}

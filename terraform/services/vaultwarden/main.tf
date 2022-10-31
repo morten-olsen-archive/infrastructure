@@ -25,7 +25,14 @@ resource "docker_container" "main" {
   image   = docker_image.main.image_id
   restart = "unless-stopped"
   env = [
-    "DOMAIN=${module.proxy.domain}"
+    "DOMAIN=https://${module.proxy.domain}",
+    "SMTP_HOST=${var.smtp.host}",
+    "SMTP_FROM=${var.smtp.from}",
+    "SMTP_USERNAME=${var.smtp.username}",
+    "SMTP_PASSWORD=${var.smtp.password}",
+    "SMTP_POST=587",
+    "SMTP_SSL=true",
+    "SMTP_EXPLICIT_TLS=false"
   ]
 
   networks_advanced {
